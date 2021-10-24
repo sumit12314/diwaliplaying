@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Diwali</h1>
+        <div class="border">
+            <div class="box">
+                <div class="boxdiv" id="rocket">
+                    <img src="rocket.png" height="100px" width="100px" style="padding-left: 10px; padding-top: 10px;">
+                    <h2>Rocket</h2>
+                </div>
+                <div class="boxdiv" id="anar">
+                    <img src="anar.png" height="120px" width="100px" style="padding-left: 10px;">
+                    <h2 style="position: relative; top: -10px; left: 10px;">Anar</h2>
+                </div>
+                <div class="boxdiv" id="mirchi">
+                    <img src="mirchi.png" height="130px" width="100px" style="padding-left: 18px;">
+                    <h2 style="position: relative; top: -15px;">Cracker</h2>
+                </div>
+                <div class="boxdiv" id="Sparker">       
+                    <img src="sparker.png" height="100px" width="100px" style="padding-top: 12px; padding-left: 12px;">
+                    <h2>Sparker</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let AudioElement = new Audio("rocket.mp3");
+        let AudioElement2 = new Audio("3.mp3");
+        let AudioElement3 = new Audio("4.mp3");
+        let AudioElement4 = new Audio("2.mp3");
+        let rocket = document.getElementById("rocket");
+        let anar = document.getElementById("anar");
+        let mirchi = document.getElementById("mirchi");
+        let Sparker = document.getElementById("Sparker");
+        
+        rocket.addEventListener("click",()=>{
+           // console.log("click");
+            AudioElement.play();
+        });
+
+        mirchi.addEventListener("click",()=>{
+            // console.log("click");
+             AudioElement2.play();
+        });
+        
+        Sparker.addEventListener("click",()=>{
+           // console.log("click");
+            AudioElement3.play();
+        });
+           
+         anar.addEventListener("click",()=>{
+           // console.log("click");
+            AudioElement4.play();
+        });
+
+
+    </script>
+</body>
+</html>
